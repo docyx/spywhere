@@ -35,6 +35,7 @@ if (import.meta.env.DEV) {
 }
 
 const targets = untypedTargets as Target[]
+const baseUrl = import.meta.env.BASE_URL
 
 const currentTargetIndexOrUrl = useStorage('current-target', 0, localStorage, {
 	// FIXME: This is a hacky solution to make sure we don't error out when
@@ -365,7 +366,7 @@ window.addEventListener(
 			:class="{ invisible: !imageLoaded }"
 			:src="
 				typeof currentTargetIndexOrUrl === 'number'
-					? `/img/${currentTargetIndexOrUrl + 1}.avif`
+					? `${baseUrl}img/${currentTargetIndexOrUrl + 1}.avif`
 					: currentTargetIndexOrUrl
 			"
 		/>
