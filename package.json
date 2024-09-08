@@ -1,0 +1,30 @@
+{
+	"name": "spywhere",
+	"private": true,
+	"version": "0.1.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc -b && vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@vueuse/core": "^11.0.3",
+		"canvas-confetti": "^1.9.3",
+		"panzoom": "^9.4.3",
+		"vue": "^3.4.37"
+	},
+	"devDependencies": {
+		"@mdi/js": "^7.4.47",
+		"@types/canvas-confetti": "^1.6.4",
+		"@vitejs/plugin-vue": "^5.1.2",
+		"autoprefixer": "^10.4.20",
+		"postcss": "^8.4.44",
+		"prettier": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.6.6",
+		"tailwindcss": "^3.4.10",
+		"typescript": "^5.5.3",
+		"vite": "^5.4.1",
+		"vue-tsc": "^2.0.29"
+	}
+}
